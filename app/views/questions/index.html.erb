@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TECH CHAT</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <% @questions.each do |question| %>
+      <div class="question_box">
+        <div class="title">タイトル:<%= question.title %></div>
+        <div class="contents">内容:<%= question.content %></div>
+        <div class="penname">投稿者名:<%= question.name %></div>
+      </div>
+    <% end %>
+  </body>
+</html>
+
