@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <div class="q-list">
+      <%= link_to '質問する', new_question_path, method: :get %>
+    </div>
     <% @questions.each do |question| %>
       <div class="question_box">
         <div class="title">タイトル:<%= question.title %></div>
