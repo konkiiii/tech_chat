@@ -6,3 +6,22 @@
   表示完了
   投稿の保存が途中
   データの保存ができず止まっている
+12/6
+・データ保存できた
+ここが間違えてた
+正
+    <%= form_with(model: @question, local: true) do |form| %>
+    <form class="question">
+
+    〜省略〜
+
+    </form>
+    <% end %>
+誤
+    <form class="question"> 
+    <%= form_with(model: @question, local: true) do |form| %>
+      
+      〜省略〜
+
+    <% end %>
+    </form>
