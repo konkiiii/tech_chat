@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <%# <form class="question"> %>
     <%= form_with(model: @question, local: true) do |form| %>
-    <form class="question">
       <div>
         <%= form.text_field :title, placeholder: "タイトル" %>
       </div>
@@ -21,7 +21,7 @@
       <div>
         <%= form.submit "POST" %>
       </div>
-    </form>
     <% end %>
+    <%# </form> %>
   </body>
 </html>

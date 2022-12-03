@@ -9,19 +9,21 @@
 12/6
 ・データ保存できた
 ここが間違えてた
-正
-    <%= form_with(model: @question, local: true) do |form| %>
-    <form class="question">
+  正
+      <%= form_with(model: @question, local: true) do |form| %>
+      <form class="question">
 
-    〜省略〜
-
-    </form>
-    <% end %>
-誤
-    <form class="question"> 
-    <%= form_with(model: @question, local: true) do |form| %>
-      
       〜省略〜
 
-    <% end %>
-    </form>
+      </form>
+      <% end %>
+  誤
+      <form class="question"> 
+      <%= form_with(model: @question, local: true) do |form| %>
+        
+        〜省略〜
+
+      <% end %>
+      </form>
+  ・デザインカンプ途中まで
+  
