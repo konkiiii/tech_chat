@@ -1,0 +1,18 @@
+<div class="scroll-block">
+  <% @questions.each do |question| %>
+  <div class="comment-block">
+    <div class="left-block">
+      <div class="amount-num">0</div>
+      <div class="comment-num">comments</div>
+    </div>
+    <div class="right-block">
+        <div class="title-block">
+          <div class="q-title">タイトル:<%= link_to question.title, question_path(question.id) %></div>
+          
+          <div class="penname">投稿者名:<%= question.name %></div>
+        </div>
+        <div class="contents">内容:<%= question.content %></div>
+    </div>
+  </div>
+  <% end %>
+</div>

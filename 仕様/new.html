@@ -7,19 +7,28 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <form class="question">
-      <div>
-        <input type="text" placeholder="タイトル" class="title-form">
+    <div class="headder">
+      <div class="title">TechChat</div>
+      <div class="question-btn">質問する</div>
+    </div>
+    <div class="main">
+      <div class="question-post">
+        <div class="block-bar"></div>
+        <div class="question">
+          <div>
+            <input type="text" placeholder="タイトル" class="title-form">
+          </div>
+          <div>
+            <textarea name="message" placeholder="質問内容" class="message-form"></textarea>
+          </div>
+          <div>
+            <input type="text" placeholder="投稿者名" class="title-form">
+          </div>
+          <div>
+            <input type="submit" value="POST" class="post-btn">
+          </div>
+        </div>
       </div>
-      <div>
-        <textarea name="message" placeholder="質問内容" class="message-form"></textarea>
-      </div>
-      <div>
-        <input type="text" placeholder="投稿者名" class="title-form">
-      </div>
-      <div>
-        <input type="submit" value="POST" class="send">
-      </div>
-    </form>
+    </div>
   </body>
 </html>
