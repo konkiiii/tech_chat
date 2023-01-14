@@ -14,15 +14,16 @@
   letter-spacing: 1.8px;
   margin-left: 20px;
 }
-.question{
+.question-btn{
   background-color: #ffffff;
   color: #3a3736;
   font-size: 16px;
   border-radius: 5px;
   width: 80px;
   height: 32px;
-  margin-left: 20px;
+  margin-right: 20px;
   text-align: center;
+  line-height: 32px;
 }
 .main{
   height: calc(100vh - 65px);
@@ -31,6 +32,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f2f2f3;
+}
+.scroll-block{
+  overflow: scroll;
 }
 .comment-block{
   width: 700px;
@@ -38,12 +43,75 @@
   margin-bottom: 25px;
   display: flex;
   border-radius: 5px 0 0 5px;
-  /*  */
-  background-color: purple;
 }
 .left-block{
   background-color: #1c3667;
   border-radius: 5px 0 0 5px;
   color: #ffffff;
   width: 70px;
+  text-align: center;
+}
+.amount-num{
+  font-size: 26px;
+  height: 38px;
+  margin-top: 20px;
+}
+.comment-num{
+  font-size: 11px;
+  height: 16px;
+}
+.right-block{
+  background-color: #ffffff;
+  padding: 10px 15px;
+  width: 100%;
+  font-size: 12px;
+}
+.title-block{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.q-title{
+  font-size: 14px;
+  width: 500px;
+}
+
+/* new.html */
+.question-post{
+  width: 700px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  /* 削除 */
+  height: 500px;
+}
+.block-bar{
+  height: 45px;
+  background-color: #1c3667;
+  border-radius: 5px 5px 0 0;
+}
+.question{
+  width: 520px;
+  /* background-color: aqua; */
+  margin: 40px auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-form, .message-form, .send{
+  width: 520px;
+}
+.title-form{
+  height: 30px;
+}
+.message-form{
+  height: 120px;
+  margin: 15px auto;
+}
+.post-btn{
+  color: #ffffff;
+  background-color: #1c3667;
+  font-size: 18px;
+  height: 36px;
+  margin: 20px auto 40px;
 }
